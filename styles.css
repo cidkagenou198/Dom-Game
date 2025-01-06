@@ -1,0 +1,78 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: #282c36;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+#loadingScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    z-index: 1000;
+}
+
+#gameArea {
+    width: 400px;
+    height: 400px;
+    border: 3px solid #61dafb;
+    margin: 20px auto;
+    position: relative;
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.target {
+    width: 50px;
+    height: 50px;
+    background-color: #e63946;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.target:hover {
+    background-color: #ff4757;
+    box-shadow: 0 0 20px rgba(255, 71, 87, 1);
+    transform: scale(1.2) rotate(15deg);
+}
+
+#controls {
+    margin: 20px;
+}
+
+button, select {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button {
+    background-color: #61dafb;
+    color: #000;
+}
+
+button:hover {
+    background-color: #1cb1f5;
+    transform: scale(1.1);
+}
+
+select {
+    background-color: #21a1f1;
+    color: #000;
+}
