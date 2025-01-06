@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click the Target Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="showLoadingScreen()">
+    <div id="loadingScreen">Loading...</div>
+    <h1>Click the Target Game</h1>
+    <p>Score: <span id="score">0</span></p>
+    <p>Time Left: <span id="time">30</span> seconds</p>
+    <div id="controls">
+        <button onclick="resetGame()">Reset Game</button>
+        <label for="difficulty">Difficulty: </label>
+        <select id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+    </div>
+    <div id="gameArea"></div>
+    <script src="script.js"></script>
+</body>
+</html>
